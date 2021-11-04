@@ -50,6 +50,7 @@ export const getStaticProps = async () => {
     },
   });
   const records = await res.json();
+
   const headings = ['#', 'Name', 'Created At', 'Action'];
   return {
     props: {
